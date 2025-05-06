@@ -1,0 +1,160 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f7fa;
+  color: #1f2937;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#darkModeToggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.controls input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+}
+
+.controls button {
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter-btn {
+  flex: 1;
+  padding: 0.5rem;
+  background-color: #e5e7eb;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background-color: #6366f1;
+  color: white;
+}
+
+#stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#taskList li {
+  background-color: white;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  max-width: 400px;
+  width: 100%;
+}
+
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.modal-actions button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-actions button[type="submit"] {
+  background-color: #10b981;
+  color: white;
+}
+
+.modal-actions button[type="button"] {
+  background-color: #ef4444;
+  color: white;
+}

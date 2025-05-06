@@ -1,0 +1,45 @@
+body.dark {
+  background-color: #1e293b;
+  color: #f9fafb;
+}
+
+body.dark .filter-btn {
+  background-color: #334155;
+  color: #f9fafb;
+}
+
+body.dark .filter-btn.active {
+  background-color: #6366f1;
+  color: white;
+}
+
+body.dark .controls input,
+body.dark .modal-content input,
+body.dark .modal-content textarea,
+body.dark .modal-content select {
+  background-color: #0f172a;
+  color: #f1f5f9;
+  border: 1px solid #475569;
+}
+
+body.dark .controls button,
+body.dark .modal-actions button {
+  color: white;
+}
+
+body.dark #taskList li {
+  background-color: #334155;
+  color: #f1f5f9;
+}
+
+body.dark .modal-content {
+  background-color: #1e293b;
+}
+
+body.dark #stats {
+  color: #94a3b8;
+}
+
+body.dark header {
+  border-bottom: 1px solid #475569;
+}
